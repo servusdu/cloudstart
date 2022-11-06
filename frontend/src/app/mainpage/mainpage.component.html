@@ -1,0 +1,11 @@
+<h2>My Tasks</h2>
+<ul class="tasks">
+  <li *ngFor="let task of Tasks">
+    <button [class.selected]="task === selectedTask" type="button" (click)="onSelect(task)">
+      <span class="badge">{{task.id}}</span>
+      <span class="name">{{task.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<app-task-detail [task]="selectedTask"></app-task-detail>
