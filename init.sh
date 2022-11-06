@@ -15,7 +15,7 @@ local_ip=$(ifconfig | grep 172.20 | sed "s/^.*inet \([0-9]*\.[0-9]*\.[0-9]*\.[0-
 if [ -z "$local_ip" ]; then
 	local_ip=$(ifconfig | grep 192 | sed "s/^.*inet \([0-9]*\.[0-9]*\.[0-9]*\.[0-9]*\) .*$/\1/g")
 fi
-
+local_ip=10.11.74.156
 echo "127.0.0.1 localhost" > ./dev/hosts
 echo "$local_ip workstation tomcat" >> ./dev/hosts
 echo "$local_ip workstation" >> ./dev/hosts-nginx

@@ -1,13 +1,13 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="init.sh" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="" />
-    <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-    <option name="SCRIPT_PATH" value="$PROJECT_DIR$/init.sh" />
+    <option name="SCRIPT_TEXT" value="#!/usr/bin/env bash echo &quot;# Stop everything&quot; docker-compose down --remove-orphans echo &quot;# Remove all volumes&quot; docker volume rm &quot;${PWD##*/}_mariadb&quot; || true echo &quot;# Get local ips and write into hosts&quot; rm -rf ./dev/hosts ./dev/hosts-nginx ./dev/hosts-tomcat local_ip=$(ifconfig | grep 172.20 | sed &quot;s/^.*inet \([0-9]*\.[0-9]*\.[0-9]*\.[0-9]*\) .*$/\1/g&quot;) if [ -z &quot;$local_ip&quot; ]; then local_ip=$(ifconfig | grep 192 | sed &quot;s/^.*inet \([0-9]*\.[0-9]*\.[0-9]*\.[0-9]*\) .*$/\1/g&quot;) fi echo &quot;127.0.0.1 localhost&quot; &gt; ./dev/hosts echo &quot;$local_ip workstation tomcat&quot; &gt;&gt; ./dev/hosts echo &quot;$local_ip workstation&quot; &gt;&gt; ./dev/hosts-nginx echo &quot;$local_ip workstation local.egotec.com&quot; &gt;&gt; ./dev/hosts-tomcat echo &quot;IP=$local_ip&quot; echo &quot;# start docker-compose env and tomcat&quot; docker-compose pull docker-compose up -d echo &quot;&lt;= done&quot; echo &quot;Open http://localhost&quot;" />
+    <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+    <option name="SCRIPT_PATH" value="$USER_HOME$/Desktop/cloudstart/init.sh" />
     <option name="SCRIPT_OPTIONS" value="" />
-    <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-    <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-    <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
+    <option name="SCRIPT_WORKING_DIRECTORY" value="$USER_HOME$/Desktop/cloudstart" />
+    <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
+    <option name="INTERPRETER_PATH" value="$PROJECT_DIR$/../../../../Windows/System32/bash.exe" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="EXECUTE_IN_TERMINAL" value="true" />
     <option name="EXECUTE_SCRIPT_FILE" value="true" />
