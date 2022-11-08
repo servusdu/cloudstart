@@ -9,19 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="verbesserungen">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/mock-task.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/task.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/init_sh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/init_sh.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starterproject_cloud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starterproject_cloud.iml" afterDir="false" />
+    <list default="true" id="1b07a46a-510c-4d20-8b8f-02e0b0dd5e41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/hosts-nginx" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts-nginx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/hosts-tomcat" beforeDir="false" afterPath="$PROJECT_DIR$/dev/hosts-tomcat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init.sh" afterDir="false" />
     </list>
     <list id="32b4a4d6-19ce-4d36-81b9-0f3d8f62673b" name="config" comment="" />
@@ -265,7 +258,13 @@
       <workItem from="1667600132325" duration="1098000" />
       <workItem from="1667679968561" duration="2057000" />
       <workItem from="1667682176911" duration="1505000" />
-      <workItem from="1667740906497" duration="1556000" />
+      <workItem from="1667740906497" duration="5713000" />
+      <workItem from="1667816842612" duration="163000" />
+      <workItem from="1667817025576" duration="229000" />
+      <workItem from="1667817304702" duration="1920000" />
+      <workItem from="1667906036533" duration="8000" />
+      <workItem from="1667946140437" duration="197000" />
+      <workItem from="1667946360131" duration="357000" />
     </task>
     <task id="LOCAL-00001" summary="grundlegendes Projekt angelegt, JPA, Docker, beispielhafte REST Schnittstelle und EntityClass">
       <created>1657660600581</created>
@@ -386,7 +385,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666689361357</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Task-List ohne add und Databaseconect">
+      <created>1667742701090</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667742701090</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Task-List ohne add und Databaseconect">
+      <created>1667742784259</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667742784259</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +429,8 @@
     <MESSAGE value="ignore hosts stuff" />
     <MESSAGE value="best" />
     <MESSAGE value="verbesserungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="verbesserungen" />
+    <MESSAGE value="Task-List ohne add und Databaseconect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task-List ohne add und Databaseconect" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
